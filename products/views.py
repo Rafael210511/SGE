@@ -35,7 +35,7 @@ class ProductListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['product_metrics'] = metrics.get_product_metrics()
+        context['metrics'] = metrics.get_product_metrics()
         context['sales_metrics'] = metrics.get_sales_metrics()
         context['categories'] = Category.objects.all()
         context['brands'] = Brand.objects.all()
