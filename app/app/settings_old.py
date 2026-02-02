@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-rw#b)8%8tp)m!2kd9sm2zp_q!wzd0$#29u2ss+5#-0rjwl*6c0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'rafaelcqs.pythonanywhere.com',
+    'www.rafaelcqs.pythonanywhere.com',
+]
 
 
 # Application definition
